@@ -28,7 +28,7 @@ RUN nohup sbt run &
 
 #RUN sbt assembly
 
-RUN ls -lthr /target
+RUN ls -lthr /target/scala-2.12
 
 RUN chmod +x /bin/gha-fargate-poc
 
