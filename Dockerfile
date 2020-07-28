@@ -16,7 +16,7 @@ ADD . /
 
 RUN sbt test
 
-#RUN sbt run
+RUN nohup sbt run &
 
 #RUN curl localhost:9000/live
 
