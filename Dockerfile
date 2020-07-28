@@ -14,17 +14,17 @@ RUN  apt-get install -y sbt
 
 ADD . /
 
-RUN sbt test
+#RUN sbt test
 
-RUN nohup sbt run &
+#RUN nohup sbt run &
 
 #RUN curl localhost:9000/live
 
-RUN play dist
+#RUN play dist
 
-RUN sbt assembly
+#RUN sbt assembly
 
-RUN chmod +x /target/universal/scripts/bin/gha-fargate-poc
+#RUN chmod +x /target/universal/scripts/bin/gha-fargate-poc
 
-RUN /target/universal/scripts/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
+#RUN /target/universal/scripts/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
 
