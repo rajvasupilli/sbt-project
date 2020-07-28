@@ -20,7 +20,7 @@ RUN nohup sbt run &
 
 #RUN curl localhost:9000/live
 
-RUN sbt dist
+RUN play dist
 
 RUN sbt assembly
 
