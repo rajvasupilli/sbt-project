@@ -24,7 +24,9 @@ MAINTAINER Pavan
 
 #RUN echo $GITHUB_WORKSPACE
 
-RUN ls -lthr /home/runner/work/rajvasupilli/sbt-project
+ADD /home/runner/work/rajvasupilli/sbt-project /
+
+RUN ls -lthr
 
 #RUN sbt test
 
