@@ -30,7 +30,7 @@ RUN nohup sbt run &
 
 RUN ls -lthr /
 
-RUN find / -type f -iname gha-fargate-poc
+RUN chmod +x /bin/gha-fargate-poc
 
 RUN chmod +x /target/universal/scripts/bin/gha-fargate-poc
 
