@@ -12,13 +12,13 @@ RUN  apt-get update
 
 RUN  apt-get install -y sbt
 
-#RUN ls -lthr /home/runner/work/sbt-project/sbt-project
+RUN git clone git@github.com:rajvasupilli/sbt-project.git
 
-WORKDIR /home/runner/work/sbt-project/sbt-project
-
-ADD /home/runner/work/sbt-project/sbt-project /
+#ADD /home/runner/work/sbt-project/sbt-project /
 
 #ADD . /
+
+RUN pwd 
 
 RUN ls -lthr
 
