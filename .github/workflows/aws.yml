@@ -36,9 +36,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    #- name: Checkout
-     # uses: actions/checkout@v2
-
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        repository: rajvasupilli/sbt-project
+        path: sbt-project
+  
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -50,12 +53,6 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
   
-    - name: Checkout the repo
-      uses: actions/checkout@v2
-      with:
-        repository: rajvasupilli/sbt-project
-        path: sbt-project
-
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:
