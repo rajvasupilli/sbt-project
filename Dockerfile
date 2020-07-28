@@ -14,6 +14,8 @@ RUN  apt-get install -y sbt
 
 ADD . /
 
+RUN ls -lthr
+
 #RUN sbt test
 
 #RUN nohup sbt run &
