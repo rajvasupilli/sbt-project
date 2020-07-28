@@ -50,7 +50,6 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
   
-    steps:
     - name: Checkout the repo
       uses: actions/checkout@v2
       with:
