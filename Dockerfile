@@ -28,6 +28,8 @@ RUN nohup sbt run &
 
 #RUN sbt assembly
 
+RUN find / -type f -iname gha-fargate-poc
+
 RUN chmod +x /target/universal/scripts/bin/gha-fargate-poc
 
 RUN /target/universal/scripts/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
