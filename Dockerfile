@@ -4,7 +4,7 @@ MAINTAINER Pavan
 
 RUN pwd
 
-RUN ls -lthr 
+RUN ls -lthr /run
 
 RUN apt-get update && apt-get install -y gnupg2 && apt-get install -y wget && apt-get install -y curl && apt-get -y install openjdk-8-jdk
 
@@ -22,7 +22,7 @@ ADD . /
 
 RUN pwd 
 
-RUN ls -lthr
+RUN ls -lthr /run
 
 RUN which sbt
 
