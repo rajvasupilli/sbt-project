@@ -14,11 +14,11 @@ MAINTAINER Pavan
 
 #ADD /home/runner/work/sbt-project/sbt-project /
 
-#ADD . /
+ADD . /
 
-#RUN pwd 
+RUN pwd 
 
-#RUN ls -lthr /run
+RUN ls -lthr /run
 
 #RUN which sbt
 
