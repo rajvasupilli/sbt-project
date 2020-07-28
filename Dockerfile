@@ -28,7 +28,7 @@ RUN nohup sbt run &
 
 #RUN sbt assembly
 
-RUN ls -lthr /
+RUN ls -lthr /target
 
 RUN chmod +x /bin/gha-fargate-poc
 
