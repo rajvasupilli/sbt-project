@@ -22,7 +22,9 @@ MAINTAINER Pavan
 
 #RUN which sbt
 
-RUN echo $GITHUB_WORKSPACE
+#RUN echo $GITHUB_WORKSPACE
+
+RUN ls -lthr /home/runner/work/rajvasupilli/sbt-project
 
 #RUN sbt test
 
