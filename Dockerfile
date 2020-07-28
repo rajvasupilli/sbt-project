@@ -16,11 +16,9 @@ RUN  apt-get update
 
 RUN  apt-get install -y sbt
 
-RUN git clone git@github.com:rajvasupilli/sbt-project.git
-
 #ADD /home/runner/work/sbt-project/sbt-project /
 
-#ADD . /
+ADD . /
 
 RUN pwd 
 
