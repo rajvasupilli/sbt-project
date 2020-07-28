@@ -12,11 +12,11 @@ RUN  apt-get update
 
 RUN  apt-get install -y sbt
 
-RUN ls -lthr /home/runner/work/sbt-project/sbt-project
+#RUN ls -lthr /home/runner/work/sbt-project/sbt-project
 
-RUN ls -lthr /home/runner/work/sbt-project/
+ADD /home/runner/work/sbt-project/ /
 
-ADD . /
+#ADD . /
 
 RUN ls -lthr
 
