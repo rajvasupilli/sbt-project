@@ -12,7 +12,7 @@ RUN  apt-get update
 
 RUN  apt-get install -y sbt
 
-#ADD . /
+ADD . /
 
 RUN pwd 
 
@@ -24,11 +24,11 @@ RUN nohup sbt run &
 
 #RUN curl localhost:9000/live
 
-#RUN sbt dist
+RUN sbt dist
 
 #RUN sbt assembly
 
-RUN ls -lthr /target/scala-2.12/update/update_cache_2.12
+#RUN ls -lthr /target/scala-2.12/update/update_cache_2.12
 
 RUN chmod +x /bin/gha-fargate-poc
 
