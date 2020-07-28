@@ -1,0 +1,24 @@
+{
+    "family": "sbt-task-definition",
+    "executionRoleArn": "arn:aws:iam::634910053091:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "sbt-container",
+            "image": "634910053091.dkr.ecr.us-east-1.amazonaws.com/sbt-ecr",
+            "portMappings": [
+                {
+                    "containerPort": 9000,
+                    "hostPort": 9000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024"
+}
