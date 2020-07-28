@@ -18,7 +18,7 @@ ADD . /
 
 RUN pwd 
 
-RUN ls -lthr /run
+RUN ls -lthr /
 
 #RUN which sbt
 
