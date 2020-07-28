@@ -2,6 +2,10 @@ FROM ubuntu
 
 MAINTAINER Pavan
 
+RUN pwd
+
+RUN ls -lthr 
+
 RUN apt-get update && apt-get install -y gnupg2 && apt-get install -y wget && apt-get install -y curl && apt-get -y install openjdk-8-jdk
 
 RUN echo "deb https://dl.bintray.com/sbt/debian /" |  tee -a /etc/apt/sources.list.d/sbt.list
