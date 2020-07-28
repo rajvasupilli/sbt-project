@@ -14,7 +14,9 @@ RUN  apt-get install -y sbt
 
 #RUN ls -lthr /home/runner/work/sbt-project/sbt-project
 
-WORKDIR /home/runner/work/sbt-project
+WORKDIR /home/runner/work/sbt-project/sbt-project
+
+ADD /home/runner/work/sbt-project/sbt-project /
 
 #ADD . /
 
