@@ -16,6 +16,8 @@ ADD . /
 
 RUN ls -lthr
 
+RUN which sbt
+
 #RUN sbt test
 
 #RUN nohup sbt run &
