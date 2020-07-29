@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script installs all the prequisites needed.
 # yum install -y git
 
