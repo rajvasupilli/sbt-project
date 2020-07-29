@@ -31,6 +31,15 @@ on:
 name: Deploy to Amazon ECS
 
 jobs:
+  runMultipleCommands:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v1
+     - run: |
+        echo "Installing the prerequisites"
+        bash prereq.sh -xe
+     - run: echo "Prerequisites Installed Successfully!!"
+    
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
@@ -38,10 +47,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      with:
-        repository: rajvasupilli/sbt-project
-    - name: Prerequisites  
-      run: prereq.sh
               
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
