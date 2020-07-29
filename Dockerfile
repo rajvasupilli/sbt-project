@@ -12,27 +12,16 @@ RUN  apt-get update
 
 RUN  apt-get install -y sbt
 
-ADD . /
+#RUN sbt test
 
-RUN pwd 
+#RUN sbt dist
 
-RUN ls -lthr /
+#RUN sbt stage
 
-RUN sbt test
+EXPOSE 9000
 
-RUN nohup sbt run &
+ADD target /target
 
-#RUN curl localhost:9000/live
+CMD chmod +x /target/universal/stage/bin/gha-fargate-poc
 
-RUN sbt dist
-
-#RUN sbt assembly
-
-#RUN ls -lthr /target/scala-2.12/update/update_cache_2.12
-
-RUN chmod +x /bin/gha-fargate-poc
-
-RUN chmod +x /target/universal/scripts/bin/gha-fargate-poc
-
-RUN /target/universal/scripts/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
-
+CMD /target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
