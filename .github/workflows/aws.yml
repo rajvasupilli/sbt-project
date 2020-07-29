@@ -40,8 +40,9 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: rajvasupilli/sbt-project
-        #path: sbt-project
-  
+    - name: Prerequisites  
+      run: prereq.sh
+              
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
