@@ -32,7 +32,7 @@ name: Deploy to Amazon ECS
 
 jobs:
   runMultipleCommands:
-    runs-on: centos
+    runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v1
      - run: |
