@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/pavan/Desktop/Skechers/GitHub Actions/gha-fargate-poc/conf/routes
-// @DATE:Sun Jul 26 21:33:33 PDT 2020
+// @SOURCE:/tmp/gha-fargate-poc/conf/routes
+// @DATE:Fri Jul 31 11:43:53 UTC 2020
 
 package router
 
