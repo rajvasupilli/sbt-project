@@ -19,7 +19,7 @@ sudo apt-get update
 
 sudo apt-get install -y sbt
 
-cd sbt-project/
+#cd sbt-project/
 
 sbt test
 
