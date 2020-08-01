@@ -63,7 +63,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: sbt-ecr
+        ECR_REPOSITORY: sbtrepo
         IMAGE_TAG: latest
       run: |
         # Build a docker container and
