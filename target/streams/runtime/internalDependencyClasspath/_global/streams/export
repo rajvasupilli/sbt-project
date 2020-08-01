@@ -1,1 +1,1 @@
-/tmp/gha-fargate-poc/target/scala-2.13/classes:/tmp/gha-fargate-poc/target/web/classes/main
+/root/sbt-project/target/scala-2.13/classes:/root/sbt-project/target/web/classes/main

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/tmp/gha-fargate-poc/conf/routes
-// @DATE:Fri Jul 31 11:43:53 UTC 2020
+// @SOURCE:/root/sbt-project/conf/routes
+// @DATE:Sat Aug 01 19:04:21 UTC 2020
 
 import play.api.routing.JavaScriptReverseRoute
 
