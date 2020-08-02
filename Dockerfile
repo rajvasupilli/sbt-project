@@ -8,6 +8,8 @@ EXPOSE 9000
 
 ADD target /target
 
+ADD conf /conf
+
 COPY entrypoint.sh /entrypoint.sh
 
 CMD chmod +x /target/universal/stage/bin/gha-fargate-poc
