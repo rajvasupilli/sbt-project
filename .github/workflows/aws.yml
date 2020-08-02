@@ -96,4 +96,4 @@ jobs:
      - run: |
         echo "Testing the SBT Service"
         bash prereq.sh -xe
-     - run: curl 0.0.0.0:9000
+     - run: docker ps
