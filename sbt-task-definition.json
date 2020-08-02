@@ -10,14 +10,7 @@
 			"hostPort": 9000,
 			"protocol": "tcp"
 		}],
-		"essential": true,
-		"entryPoint": [
-			"sh",
-			"-c"
-		],
-		"command": [
-			"/bin/sh -c /target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'"
-		]
+		"essential": true
 	}],
 	"requiresCompatibilities": [
 		"FARGATE"
