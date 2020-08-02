@@ -18,6 +18,7 @@
             ],
          }
             "essential": true
+        }
    ],
     "requiresCompatibilities": [
         "FARGATE"
