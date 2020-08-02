@@ -4,9 +4,7 @@
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
-            "entryPoint": [
-             "/target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'"
-            ],        
+            "entryPoint": "/target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'",       
             "name": "sbt-container",
             "image": "597993487797.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
             "portMappings": [
