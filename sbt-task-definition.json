@@ -26,8 +26,7 @@
                "awslogs-stream-prefix": "ecs"
               }
             }
-        }
-    ],
+   ],
     "requiresCompatibilities": [
         "FARGATE"
     ],
