@@ -84,11 +84,9 @@ jobs:
         cluster: sbt-cluster
         wait-for-service-stability: true
         
-  TestSBTService:
-    runs-on: ubuntu-latest
-    steps:
-     - uses: actions/checkout@v1
-     - run: |
+    - name: TestSBTService
+      uses: actions/checkout@v2
+    - run: |
         echo "Testing the SBT Service"
-        bash prereq.sh -xe
-     - run: docker ps
+        docker ps
+
