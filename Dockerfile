@@ -24,4 +24,6 @@ ADD target /target
 
 CMD chmod +x /target/universal/stage/bin/gha-fargate-poc
 
-CMD /target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
+#CMD /target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
+
+ENTRYPOINT ["./entrypoint.sh"]
