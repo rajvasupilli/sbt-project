@@ -1,10 +1,10 @@
 {
   "family": "sbt-task-definition",
-  "executionRoleArn": "arn:aws:iam::729186614334:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::597993487797:role/ecsTaskExecutionRole",
   "containerDefinitions": [
       {
           "name": "sbt-container",
-          "image": "729186614334.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
+          "image": "597993487797.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
           "cpu": 512,
           "portMappings": [
             {
