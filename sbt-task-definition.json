@@ -23,6 +23,6 @@
         "FARGATE"
     ],
     "cpu": "2048",
-    "memory": "4098"
+    "memory": "4096"
 }
 
