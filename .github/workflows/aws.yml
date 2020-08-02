@@ -88,3 +88,12 @@ jobs:
         service: sbt-service
         cluster: sbt-cluster
         wait-for-service-stability: true
+        
+  TestSBTService:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v1
+     - run: |
+        echo "Testing the SBT Service"
+        bash prereq.sh -xe
+     - run: curl 0.0.0.0:9000
