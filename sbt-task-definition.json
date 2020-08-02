@@ -1,26 +1,28 @@
 {
-  "family": "sbt-task-definition",
-  "executionRoleArn": "arn:aws:iam::597993487797:role/ecsTaskExecutionRole",
-  "containerDefinitions": [
-      {
-          "name": "sbt-container",
-          "image": "597993487797.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
-          "cpu": 512,
-          "portMappings": [
-            {
-              "hostPort": 9000,
-              "protocol": "tcp",
-              "containerPort": 9000
-            }
-          ],
-          "memory": 1024,
-          "essential": true,
-      }
-  ],
-  "requiresCompatibilities": [
-    "FARGATE"
-  ],
-  "networkMode": "awsvpc",
-  "cpu": "2048",
-  "memory": "4096"
+    "family": "sbt-task-definition",
+    "executionRoleArn": "arn:aws:iam::597993487797:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "entryPoint": [
+             "/target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'"
+            ],        
+            "name": "sbt-container",
+            "image": "597993487797.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
+            "portMappings": [
+                {
+                    "containerPort": 9000,
+                    "hostPort": 9000,
+                    "protocol": "tcp"
+                }
+            ],
+         }
+            "essential": true
+   ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "2048",
+    "memory": "4028"
 }
+
