@@ -16,7 +16,7 @@
 			"-c"
 		],
 		"command": [
-			"/bin/sh -c \"/target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'\" && httpd-foreground"
+			"/bin/sh -c /target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'"
 		]
 	}],
 	"requiresCompatibilities": [
