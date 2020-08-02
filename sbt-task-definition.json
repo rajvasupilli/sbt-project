@@ -1,6 +1,6 @@
 {
     "family": "sbt-task-definition",
-    "executionRoleArn": "arn:aws:iam::597993487797:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::561760884340:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
@@ -8,7 +8,7 @@
              "/target/universal/stage/bin/gha-fargate-poc -Dplay.http.secret.key='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'"
             ],       
             "name": "sbt-container",
-            "image": "597993487797.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
+            "image": "561760884340.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
             "portMappings": [
                 {
                     "containerPort": 9000,
@@ -23,6 +23,6 @@
         "FARGATE"
     ],
     "cpu": "2048",
-    "memory": "4028"
+    "memory": "4098"
 }
 
