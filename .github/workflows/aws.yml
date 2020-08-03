@@ -43,7 +43,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 		
-	- name: Checkout
+    - name: Checkout
       uses: actions/checkout@v2
     - run: |
         echo "Installing the prerequisites"
