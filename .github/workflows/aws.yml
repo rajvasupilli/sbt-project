@@ -70,7 +70,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: sbt-task-def.json
+        task-definition: sbt-task-definition.json
         container-name: sbt-container
         image: ${{ steps.build-image.outputs.image }}
 
