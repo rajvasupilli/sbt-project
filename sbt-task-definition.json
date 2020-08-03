@@ -1,10 +1,10 @@
 {
 	"family": "sbt-task-definition",
-	"executionRoleArn": "arn:aws:iam::521602432279:role/ecsTaskExecutionRole",
+	"executionRoleArn": "arn:aws:iam::238029455348:role/ecsTaskExecutionRole",
 	"networkMode": "awsvpc",
 	"containerDefinitions": [{
 		"name": "sbt-container",
-		"image": "521602432279.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
+		"image": "238029455348.dkr.ecr.us-east-1.amazonaws.com/sbtrepo:latest",
 		"portMappings": [{
 			"containerPort": 9000,
 			"hostPort": 9000,
