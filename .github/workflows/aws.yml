@@ -57,6 +57,8 @@ jobs:
         ECR_REPOSITORY: sbtrepo
         IMAGE_TAG: ${{ github.sha }}
       run: |
+        # Install the prerequisites
+        bash prereq.sh -xe
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
