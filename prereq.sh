@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script installs all the prequisites needed.
+# This script installs all the prerequisites needed to run the project
 
 sudo apt-get update
 
@@ -26,8 +26,6 @@ sudo curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E
 sudo apt-get update
 
 sudo apt-get install -y sbt
-
-#cd sbt-project/
 
 sbt test
 
